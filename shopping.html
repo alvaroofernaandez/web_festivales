@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Entradas - Festisound Córdoba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>FestiSound</h1>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#artistas">ARTISTAS</a></li>
+                    <li><a href="#info">INFORMACIÓN</a></li>
+                    <li><a href="shopping.html">ENTRADAS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main style="margin-top: 200px;"> 
+          <section class="tickets-order-section">
+            <h2>Entradas</h2>
+            <div class="ticket-container">
+                <div class="ticket">
+                    <img src="assets/1.png" alt="Basic Ticket" class="ticket-image">
+                    <div class="ticket-info">
+                        <h3>Basic</h3>
+                        <p>30€</p>
+                    </div>
+                    <button class="add-to-order" data-ticket="Basic" data-price="30">Añadir al Pedido</button>
+                </div>
+                <div class="ticket">
+                    <img src="assets/2.png" alt="Silver Ticket" class="ticket-image">
+                    <div class="ticket-info">
+                        <h3>Silver</h3>
+                        <p>60€</p>
+                    </div>
+                    <button class="add-to-order" data-ticket="Silver" data-price="60">Añadir al Pedido</button>
+                </div>
+                <div class="ticket">
+                    <img src="assets/3.png" alt="Gold Ticket" class="ticket-image">
+                    <div class="ticket-info">
+                        <h3>Gold</h3>
+                        <p>80€</p>
+                    </div>
+                    <button class="add-to-order" data-ticket="Gold" data-price="80">Añadir al Pedido</button>
+                </div>
+            </div>
+        
+            <h2>Tu Pedido</h2>
+            <div id="order-summary">
+                <p>Aún no has seleccionado ninguna entrada.</p>
+            </div>
+            <div class="order-buttons">
+                <button id="view-order" class="btn">Ver Pedido</button>
+                <button id="reset-order" class="btn">Resetear Pedido</button>
+            </div>
+        </section>
+        
+        
+      
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>FestiSound</h2>
+            </div>
+            <div class="footer-info">
+                <p>festisound @ Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="/assets/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="/assets/tiktok.svg" alt="TikTok"></a>
+                <a href="#"><img src="/assets/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

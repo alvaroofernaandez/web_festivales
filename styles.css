@@ -1,8 +1,6 @@
-/* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +11,9 @@ body {
   font-family: 'Grandstander', sans-serif;
   background-color: #111;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 header {
@@ -146,13 +147,13 @@ nav {
 }
 
 .hero {
-  height: 80vh; /* Mantén la altura de la hero */
+  height: 80vh;
   background-image: url('assets/image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -167,20 +168,19 @@ nav {
 }
 
 .hero-content {
-  text-align: center; /* Centra el texto dentro del contenedor */
-  
+  text-align: center;
   z-index: 1;
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
-    font-family: 'Leckerli One', sans-serif; /* Asegúrate de usar la misma fuente que el logo */
-    font-size: 10rem; /* Ajusta el tamaño según sea necesario */
-    color: #fff; /* Color del texto */
-    margin-bottom: 20px; /* Espacio entre el título y el botón */
+    font-family: 'Leckerli One', sans-serif;
+    font-size: 10rem;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .hero-title img {
@@ -194,9 +194,9 @@ nav {
 }
 
 .hero-logo {
-    max-width: 100%; /* Asegúrate de que el logo no exceda el ancho de la pantalla */
-    height: auto; /* Mantiene la proporción del logo */
-    margin-bottom: 20px; /* Espacio entre el logo y el botón */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .cta-btn {
@@ -311,7 +311,7 @@ h1 {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  max-width: 500px; /* Limitar el tamaño máximo de la imagen */
+  max-width: 500px;
 }
 
 .info-content {
@@ -331,7 +331,6 @@ h1 {
   color: #ccc;
 }
 
-/* Responsivo para pantallas más pequeñas */
 @media (max-width: 768px) {
   .info-container {
     flex-direction: column;
@@ -351,9 +350,8 @@ h1 {
   }
 }
 
-/* Footer */
 .footer {
-  background: linear-gradient(to top, #0a0c0d, #14191b); /* Gradiente de negro a transparente */
+  background: linear-gradient(to top, #0a0c0d, #14191b);
   padding: 20px 0;
   text-align: center;
 }
@@ -396,7 +394,6 @@ img {
   color: #fff;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .footer-content {
       flex-direction: column;
@@ -406,5 +403,152 @@ img {
   .footer-info,
   .footer-social {
       margin-bottom: 10px;
+  }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    background-color: #14191b;
+}
+
+.tickets-order-section {
+  text-align: center;
+  padding: 50px 30px;
+  background-image: url('assets/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: relative;
+  top: -55px; /* Mover la sección hacia arriba */
+}
+
+.tickets-order-section h2 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.ticket-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.ticket {
+  background-color: #0a0c0d;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+  transform: translateY(-10px);
+}
+
+.ticket-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.ticket-info h3 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.ticket-info p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.add-to-order {
+  padding: 10px 20px;
+  background-color: #060708;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-order:hover {
+  background-color: #252c30;
+}
+
+#order-summary {
+  font-size: 1.2rem;
+  background-color: #0a0c0d;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.order-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #060708;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #252c30;
+}
+
+@media (max-width: 768px) {
+  .tickets-order-section h2 {
+      font-size: 2rem;
+  }
+
+  .ticket-info h3 {
+      font-size: 1.5rem;
+  }
+
+  .ticket-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  #order-summary {
+      font-size: 1rem;
+      padding: 15px;
+  }
+
+  .btn {
+      font-size: 1rem;
+      padding: 8px 15px;
+  }
+
+  .order-buttons {
+      gap: 15px;
   }
 }
