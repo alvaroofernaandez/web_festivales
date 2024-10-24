@@ -6,11 +6,14 @@
     <title>Festisound Córdoba</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>FESTISOUND</h1>
+                <h1>
+                  FestiSound
+                </h1>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -19,8 +22,8 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#">ARTISTAS</a></li>
-                <li><a href="#">INFORMACIÓN</a></li>
+                <li><a href="#artistas">ARTISTAS</a></li>
+                <li><a href="#info">INFORMACIÓN</a></li>
                 <li><a href="#">ENTRADAS</a></li>
             </ul>
         </nav>
@@ -29,10 +32,68 @@
     <main>
         <section class="hero">
             <div class="hero-content">
+                <h1 class="hero-title">
+                  <img src="assets/logo.png" alt="Logo">
+                </h1>
                 <button class="cta-btn">¡Consigue tus entradas!</button>
             </div>
         </section>
+
+
+        <section class="artists-section" id="artistas">
+          <h2>Artistas</h2>
+          
+          <div class="artists-container">
+            <div class="artist-card">
+              <img src="assets/kaseo.jpg" alt="Kase O">
+              <h3>Kase O</h3>
+            </div>
+            <div class="artist-card">
+              <img src="assets/toteking.jpeg" alt="Tote King">
+              <h3>ToteKing</h3>
+            </div>
+            <div class="artist-card">
+              <img src="assets/delaossa.jpg" alt="Delaossa">
+              <h3>Delaossa</h3>
+            </div>
+          </div>
+        
+          <p class="artists-subtitle">Más por confirmar...</p>
+        </section>        
+
+        <section class="info-section" id="info">
+          <div class="info-container">
+            <div class="info-image">
+              <img src="/assets/foto.webp" alt="Artista en concierto">
+            </div>
+            <div class="info-content">
+              <h2>Información</h2>
+              <p>
+                Festisound es el festival de música urbana que reúne a los mejores artistas del rap, trap, reggaetón y más. Con actuaciones de Kase O, Toteking, Delaossa, entre otros, disfrutarás de un evento lleno de energía, sonido de alta calidad y espectáculos visuales impactantes.
+
+                Además de la música, el festival cuenta con zonas de food trucks, áreas de descanso y merchandising exclusivo. Festisound es la cita obligada para los amantes de la cultura urbana. ¡No te lo pierdas!              </p>
+            </div>
+          </div>
+        </section>
+        
+        
     </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <h2>FestiSound</h2>
+          </div>
+          <div class="footer-info">
+              <p>festisound @ Todos los derechos reservados.</p>
+          </div>
+          <div class="footer-social">
+              <a href="#"><img src="/assets/facebook.svg" alt="Facebook"></a>
+              <a href="#"><img src="/assets/tiktok.svg" alt="TikTok"></a>
+              <a href="#"><img src="/assets/instagram.svg" alt="Instagram"></a>
+          </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
