@@ -369,28 +369,139 @@ h1 {
   transform: scale(1.5);
 }
 
+.container {
+  flex: 1;
+  background-color: var(--background-color);
+}
+
 .tickets-order-section {
-  text-align: center;
-  padding: var(--padding-section) var(--padding-container);
-  background-image: url('assets/image.jpg');
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-color: var(--overlay-color);
-  color: var(--primary-color);
-  position: relative;
-  top: -55px;
+text-align: center;
+padding: var(--padding-section) var(--padding-container);
+background-image: url('assets/image.jpg');
+background-size: cover;
+background-position: center;
+background-blend-mode: overlay;
+background-color: var(--overlay-color);
+color: var(--primary-color);
+position: relative;
 }
 
 .tickets-order-section h2 {
-  font-family: var(--font-family-heading);
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+font-family: var(--font-family-heading);
+font-size: 2.5rem;
+margin-bottom: var(--padding-section);
 }
 
 .ticket-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: var(--padding-section);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+margin-bottom: 40px;
+}
+
+.ticket {
+background-color: #0a0c0d;
+border-radius: 15px;
+text-align: center;
+padding: 20px;
+transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+transform: translateY(-10px);
+}
+
+.ticket-image {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+
+.ticket-info h3 {
+font-family: 'Leckerli One', cursive;
+font-size: 1.8rem;
+color: #fff;
+}
+
+.ticket-info p {
+font-size: 1.2rem;
+color: #ccc;
+margin: 10px 0;
+}
+
+.add-to-order {
+padding: 10px 20px;
+background-color: #060708;
+color: #fff;
+border: 1px solid white;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
+margin-top: 15px;
+transition: background-color 0.3s ease;
+}
+
+.add-to-order:hover {
+background-color: #252c30;
+}
+
+#order-summary {
+font-size: 1.2rem;
+background-color: #0a0c0d;
+padding: 25px;
+border-radius: 10px;
+margin-bottom: 30px;
+max-width: 600px;
+margin: 0 auto;
+color: #ccc;
+}
+
+.order-buttons {
+display: flex;
+justify-content: center;
+gap: 25px;
+margin-top: 20px;
+}
+
+.btn {
+padding: 12px 25px;
+background-color: #060708;
+color: #fff;
+border: 1px solid white;
+border-radius: 5px;
+font-size: 1.2rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+background-color: #252c30;
+}
+
+@media (max-width: 768px) {
+.tickets-order-section h2 {
+    font-size: 2rem;
+}
+
+.ticket-info h3 {
+    font-size: 1.5rem;
+}
+
+.ticket-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#order-summary {
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+}
+
+.order-buttons {
+    gap: 15px;
+}
 }
