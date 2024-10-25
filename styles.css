@@ -147,7 +147,7 @@ nav {
 }
 
 .hero {
-  height: 80vh;
+  height: 110vh;
   background-image: url('assets/image.jpg');
   background-size: cover;
   background-position: center;
@@ -184,13 +184,8 @@ nav {
 }
 
 .hero-title img {
+  margin-top: 200px;
   width: 100%;
-}
-
-@media (max-width:768px) {
-  .hero-title img {
-    display: none;
-  }
 }
 
 .hero-logo {
@@ -199,10 +194,13 @@ nav {
     margin-bottom: 20px;
 }
 
-.cta-btn {
+.entradas-btn {
   background-color: #13181a;
+  font-family: 'Segoe UI';
+  text-decoration: none;
   border-radius: 45px;
   padding: 15px 30px;
+  margin-bottom: 100px;
   border: none;
   color: #fff;
   font-size: 1.2rem;
@@ -210,7 +208,7 @@ nav {
   transition: background-color 0.5s;
 }
 
-.cta-btn:hover {
+.entradas-btn:hover {
   background-color: #182e2e;
 }
 
@@ -269,7 +267,7 @@ h1 {
 }
 
 .artists-subtitle {
-  font-family: 'Grandstander', cursive;
+  font-family: 'Segoe UI', cursive;
   font-size: 1.3rem;
   color: #ccc;
   margin-top: 15px;
