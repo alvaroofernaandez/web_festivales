@@ -27,7 +27,7 @@
 header {
   display: flex;
   justify-content: center;
-  position: fixed; /* Cambiado a fixed para que siga el scroll */
+  position: fixed; 
   height: var(--header-height);
   width: 100%;
   top: 0;
@@ -37,9 +37,9 @@ header {
   padding: 10px 0;
 }
 
-/* Ajusta el espacio del contenido principal para evitar que el header cubra el contenido */
+
 body {
-  padding-top: var(--header-height); /* Empuja el contenido hacia abajo */
+  padding-top: var(--header-height);
   font-family: var(--font-family-main);
   background-color: var(--background-color);
   color: var(--primary-color);
@@ -169,7 +169,7 @@ nav {
 
 .hero {
   height: 110vh;
-  background-image: url('assets/image.jpg');
+  background-image: url('../assets/image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -377,7 +377,7 @@ h1 {
 .tickets-order-section {
 text-align: center;
 padding: var(--padding-section) var(--padding-container);
-background-image: url('assets/image.jpg');
+background-image: url('../assets/image.jpg');
 background-size: cover;
 background-position: center;
 background-blend-mode: overlay;
